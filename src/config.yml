@@ -1,0 +1,2 @@
+path = '/mnt/dalz/cda-blastiq/tbl_blastiq_hole'
+geom_columns=["design_diameter_hole","design_length_hole"]
