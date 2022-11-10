@@ -7,7 +7,7 @@ class holeGeometry:
         self.df = df
         self.geom_columns = columns
         
-    @staticmethod
+    
     def volume_formula(diameter, height):
         volume = pi * (diameter / 2) **2 * height
         return volume
