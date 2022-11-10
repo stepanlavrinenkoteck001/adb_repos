@@ -7,5 +7,5 @@ class cleanData:
         self.geom_columns = columns
         
     def drop_nulls(self):    
-        df = df[geom_columns].na.drop()
+        self.df = self.df[self.geom_columns].na.drop()
         return df
