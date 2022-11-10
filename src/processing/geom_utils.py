@@ -13,7 +13,7 @@ class holeGeometry:
         return volume
         
     def calculate_hole_volume(self):
-        if len(geom_columns) == 2:
+        if len(self.geom_columns) == 2:
             i_diameter = [i for i in [0,1] if self.geom_columns[i].find('diameter')>0][0]
             df_volume = df.select(volume_formula(self.df[self.geom_columns[i_diameter]], self.df[self.geom_columns[~i_diameter]]))
             df_volume = df_volume.withColumnRenamed(df_volume.schema.names[0], 'volume')
