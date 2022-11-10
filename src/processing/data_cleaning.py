@@ -8,4 +8,4 @@ class cleanData:
         
     def drop_nulls(self):    
         self.df = self.df[self.geom_columns].na.drop()
-        return df
+        return self.df
